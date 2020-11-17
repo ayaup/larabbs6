@@ -86,6 +86,7 @@ trait ActiveUserHelper
                                     ->get();
         // 根据话题数量计算得分
         foreach ($topic_users as $value) {
+            
             $this->users[$value->user_id]['score'] = $value->topic_count * $this->topic_weight;
         }
     }
