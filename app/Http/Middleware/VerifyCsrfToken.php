@@ -20,6 +20,6 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //微信
-        ‘wechat’，
+    //    ‘wechat’，
     ];
 }
