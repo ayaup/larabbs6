@@ -13,7 +13,7 @@ set('repository', 'git@github.com:ayaup/larabbs6.git');
 set('git_tty', false);
 
 // Shared files/dirs between deploys
-add('shared_files', ['.env']);
+add('shared_files', ['']);
 add('shared_dirs', []);
 
 // Writable dirs by web server
@@ -27,9 +27,9 @@ host('139.196.43.22')
     ->identityFile('~/.ssh/deployerkey')
     ->set('deploy_path', '/www/wwwroot/{{application}}');
 
-task('test', function () {
-        writeln('Hello world');
-    });
+// task('test', function () {
+//         writeln('Hello world');
+//     });
 
 // Tasks
 
